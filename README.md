@@ -12,3 +12,10 @@ Retail (OLTP)  →  SSIS ETL  →  Retail (Star Schema)  →  SQL Reports
 - SQL Server Management Studio (SSMS)
 - SQL Server Integration Services (SSIS) in Visual Studio
 - Dimensional modeling (Star Schema)
+
+## Architecture
+
+| Layer | What it contains |
+|---|---|
+| **Source** (`RetailSource`) | `Customers`, `Products`, `Stores`,`Orders`, `OrderItems` |
+| **Warehouse** (`RetailDW`) | `DimCustomer`, `DimProduct`, `DimStore`,`DimDate`, `FactSales` (schema `dwh`) |
