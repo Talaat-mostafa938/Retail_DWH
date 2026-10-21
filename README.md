@@ -2,5 +2,7 @@
 ---
 A complete data engineering project that builds a data warehouse for a small online store. Data is extracted from source files/tables, transformed and loaded with SSIS packages into a Star Schema (fact and dimension tables) on SQL Server, ready for reporting and analytics.  
 
-Retail (OLTP)  →  SSIS ETL  →  RetailDW (Star Schema)  →  SQL Reports
-
+┌──────────────────┐    ┌──────────┐    ┌───────────────────────┐    ┌─────────────┐
+│ MiniStoreSource  │ →  │ SSIS ETL │ →  │ MiniStoreDW           │ →  │ SQL Reports │
+│ (OLTP)           │    │          │    │ (Star Schema)         │    │             │
+└──────────────────┘    └──────────┘    └───────────────────────┘    └─────────────┘
