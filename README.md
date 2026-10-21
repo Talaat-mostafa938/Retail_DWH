@@ -9,5 +9,6 @@ Retail (OLTP)  →  SSIS ETL  →  Retail (Star Schema)  →  SQL Reports
 ## Tech stack
 
 - SQL Server (T-SQL)
+- SQL Server Management Studio (SSMS)
 - SQL Server Integration Services (SSIS) in Visual Studio
 - Dimensional modeling (Star Schema)
