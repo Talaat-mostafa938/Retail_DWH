@@ -5,3 +5,9 @@ A complete data engineering project that builds a data warehouse for a small onl
 ```
 Retail (OLTP)  →  SSIS ETL  →  Retail (Star Schema)  →  SQL Reports
 ```
+
+## Tech stack
+
+- SQL Server (T-SQL)
+- SQL Server Integration Services (SSIS) in Visual Studio
+- Dimensional modeling (Star Schema)
