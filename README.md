@@ -19,3 +19,13 @@ Retail (OLTP)  →  SSIS ETL  →  Retail (Star Schema)  →  SQL Reports
 |---|---|
 | **Source** (`RetailSource`) | `Customers`, `Products`, `Stores`,`Orders`, `OrderItems` |
 | **Warehouse** (`RetailDW`) | `DimCustomer`, `DimProduct`, `DimStore`,`DimDate`, `FactSales` (schema `dwh`) |
+
+## Star Schema
+
+```
+                 dwh.DimDate
+                      |
+ dwh.DimCustomer — dwh.FactSales — dwh.DimProduct
+                      |
+                dwh.DimStore
+```
