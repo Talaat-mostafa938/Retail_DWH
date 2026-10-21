@@ -1,1 +1,1 @@
-# Retail_DWH
+# Retail Data Warehouse
